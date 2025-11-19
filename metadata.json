@@ -1,0 +1,5 @@
+{
+  "name": "图像编辑器",
+  "description": "A powerful and intuitive web-based image editor built with React and Tailwind CSS. Users can upload images, perform various edits like rotation, resizing, applying grayscale filters, creating collages, and download the final result.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,37 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Dark Scrollbar Styling (Global) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a; 
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+::-webkit-scrollbar-corner {
+  background: #1e1e1e;
+}
+
+/* Utility to hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
