@@ -35,3 +35,45 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+/* --- 10 Icon Styles Definitions --- */
+/* Note: --icon-weight is now controlled via inline styles in App.tsx based on slider input. */
+
+/* 1. Standard */
+body[data-icon-style="standard"] { --icon-cap: round; --icon-join: round; }
+
+/* 2. Thin (Minimalist) */
+body[data-icon-style="thin"] { --icon-cap: round; --icon-join: round; }
+
+/* 3. Bold (Solid) */
+body[data-icon-style="bold"] { --icon-cap: round; --icon-join: round; }
+
+/* 4. Technical (Sharp Edges) */
+body[data-icon-style="technical"] { --icon-cap: square; --icon-join: miter; }
+
+/* 5. Sketch (Dashed) */
+body[data-icon-style="sketch"] .icon-svg path,
+body[data-icon-style="sketch"] .icon-svg rect { 
+    stroke-dasharray: 4 2; 
+}
+
+/* 6. Neon (Glow) */
+body[data-icon-style="neon"] .icon-svg { 
+    filter: drop-shadow(0 0 2px var(--color-accent));
+}
+
+/* 7. Soft (Translucent) */
+body[data-icon-style="soft"] .icon-svg { 
+    opacity: 0.8;
+}
+
+/* 8. Ink (Rounded & Heavy) */
+body[data-icon-style="ink"] { --icon-cap: round; --icon-join: round; }
+
+/* 9. Thread (Very Thin Dashed) */
+body[data-icon-style="thread"] .icon-svg path { 
+    stroke-dasharray: 1 1;
+}
+
+/* 10. Block (Extra Heavy) */
+body[data-icon-style="block"] { --icon-cap: square; --icon-join: bevel; }
