@@ -1,5 +1,5 @@
 
-import JSZip from 'jszip-esm';
+import JSZip from "jszip";
 import type { BatchImage, BatchOperation } from '../types';
 
 interface ProcessResult {
